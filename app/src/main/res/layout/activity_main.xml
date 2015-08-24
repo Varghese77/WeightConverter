@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userWeightPrompt"
+        android:layout_marginTop="41dp"
+        android:text="Enter Weight Below"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:linksClickable="false"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertPrompt"
+        android:layout_marginTop="97dp"
+        android:phoneNumber="false"
+        android:text="Convert to..."
+        android:layout_below="@+id/userWeightPrompt"
+        android:layout_alignLeft="@+id/userWeightPrompt"
+        android:layout_alignStart="@+id/userWeightPrompt"
+        android:layout_alignRight="@+id/userWeightPrompt"
+        android:layout_alignEnd="@+id/userWeightPrompt"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userWeight"
+        android:layout_below="@+id/userWeightPrompt"
+        android:layout_alignLeft="@+id/userWeightPrompt"
+        android:layout_alignStart="@+id/userWeightPrompt"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/units"
+        android:layout_toStartOf="@+id/units" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/units"
+        android:layout_alignTop="@+id/userWeight"
+        android:layout_alignRight="@+id/userWeightPrompt"
+        android:layout_alignEnd="@+id/userWeightPrompt"
+        android:textOff="lbs."
+        android:textOn="kg" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/convertPrompt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false"
+        android:id="@+id/optionsContainer">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button4"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button2"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button3"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button5"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button6"
+            android:layout_row="1"
+            android:layout_column="2" />
+    </GridLayout>
+
+</RelativeLayout>

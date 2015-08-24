@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userWeightPrompt"
+        android:text="Enter Weight Below"
+        android:textStyle="bold"
+        android:linksClickable="false"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertPrompt"
+        android:phoneNumber="false"
+        android:text="Convert to..."
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/userWeight"
+        android:layout_alignLeft="@+id/userWeight"
+        android:layout_alignStart="@+id/userWeight"
+        android:layout_alignRight="@+id/units"
+        android:layout_alignEnd="@+id/units" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userWeight"
+        android:layout_alignBottom="@+id/units"
+        android:layout_toLeftOf="@+id/units"
+        android:layout_alignLeft="@+id/userWeightPrompt"
+        android:layout_alignStart="@+id/userWeightPrompt" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/units"
+        android:textOff="lbs."
+        android:textOn="kg"
+        android:layout_below="@+id/userWeightPrompt"
+        android:layout_alignRight="@+id/userWeightPrompt"
+        android:layout_alignEnd="@+id/userWeightPrompt" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/optionsContainer"
+        android:layout_above="@+id/result"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pies"
+            android:id="@+id/piesButton"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staplers"
+            android:id="@+id/staplersButton"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Books"
+            android:id="@+id/booksButton"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roy&apos;s Bench"
+            android:id="@+id/benchButton"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goats"
+            android:id="@+id/goatsButton"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limes"
+            android:id="@+id/limesButton"
+            android:layout_row="1"
+            android:layout_column="2" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textColor="#A4C639"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
